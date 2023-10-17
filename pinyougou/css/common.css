@@ -5,9 +5,26 @@
 .fr {
     float: right;
 }
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?wmvwbf');
+    src:  url('../fonts/icomoon.eot?wmvwbf#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?wmvwbf') format('truetype'),
+      url('../fonts/icomoon.woff?wmvwbf') format('woff'),
+      url('../fonts/icomoon.svg?wmvwbf#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
 .w {
     width: 1200px;
     margin: 0 auto;
+}
+
+.style-red {
+color: red;
 }
 
 /* 顶部快捷导航 */
@@ -20,4 +37,40 @@
 
 .shortcut li {
     float: left;
+}
+
+
+.spacer {
+    width: 1px;
+    height: 12px;
+    margin: auto 12px;
+}
+
+.fr .icomoon { 
+    font-family:'icomoon';
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.header {
+    position: relative;
+    height:105px;
+    background-color: pink;
+}
+
+.logo {
+    position: absolute; 
+    top: 25px;
+    left: 0;
+    width: 175px;
+    height: 56px;
+}
+
+.logo a {
+  display: block;
+  width: 175px;
+  height: 56px;
+  background:url(../images/logo.png) no-repeat;
+  text-indent: -999px; 
+  overflow: hidden;
 }
