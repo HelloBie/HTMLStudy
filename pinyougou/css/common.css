@@ -1,76 +1,145 @@
 .fl {
-    float: left; 
+  float: left;
 }
 
 .fr {
-    float: right;
+  float: right;
 }
 
 @font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?wmvwbf');
-    src:  url('../fonts/icomoon.eot?wmvwbf#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf?wmvwbf') format('truetype'),
-      url('../fonts/icomoon.woff?wmvwbf') format('woff'),
-      url('../fonts/icomoon.svg?wmvwbf#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?wmvwbf");
+  src: url("../fonts/icomoon.eot?wmvwbf#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?wmvwbf") format("truetype"),
+    url("../fonts/icomoon.woff?wmvwbf") format("woff"),
+    url("../fonts/icomoon.svg?wmvwbf#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 
 .w {
-    width: 1200px;
-    margin: 0 auto;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .style-red {
-color: red;
+  color: red;
 }
 
 /* 顶部快捷导航 */
 
 .shortcut {
-    height: 31px;
-    background-color: #f1f1f1;
-    line-height: 31px; 
+  height: 31px;
+  background-color: #f1f1f1;
+  line-height: 31px;
 }
 
 .shortcut li {
-    float: left;
+  float: left;
 }
-
 
 .spacer {
-    width: 1px;
-    height: 12px;
-    margin: auto 12px;
+  width: 1px;
+  height: 12px;
+  margin: auto 12px;
 }
 
-.fr .icomoon { 
-    font-family:'icomoon';
-    font-size: 16px;
-    line-height: 26px;
+.fr .icomoon {
+  font-family: "icomoon";
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .header {
-    position: relative;
-    height:105px;
-    background-color: pink;
+  position: relative;
+  height: 105px;
+  background-color: pink;
 }
 
 .logo {
-    position: absolute; 
-    top: 25px;
-    left: 0;
-    width: 175px;
-    height: 56px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 175px;
+  height: 56px;
 }
 
 .logo a {
   display: block;
   width: 175px;
   height: 56px;
-  background:url(../images/logo.png) no-repeat;
-  text-indent: -999px; 
+  background: url(../images/logo.png) no-repeat;
+  text-indent: -999px;
   overflow: hidden;
+}
+
+.search {
+  position: absolute;
+  left: 348px;
+  top: 20px;
+}
+
+.text {
+  float: left;
+  width: 445px;
+  height: 32px;
+  border: 2px solid #b1191a;
+  color: #ccc;
+  padding-left: 10px;
+}
+
+.btn {
+  width: 82px;
+  height: 36px;
+  background-color: #b1191a;
+  border: 0px;
+  float: left;
+}
+
+.hotwords {
+    position: absolute;
+    top: 65px;
+    left: 368px;
+}
+
+.hotwords a {
+    margin-left: 12px;
+    margin-right:12px;
+}
+
+.shopcar {
+   position: absolute;
+   top: 25px;
+  
+   right: 64px;
+   line-height: 34px;
+    width: 138px;
+    height: 34px; 
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.car {
+    font-family: 'icomoon';
+    color: #da5555;
+}
+
+.arrow {
+    font-family: 'icomoon';
+    margin-left: 5px;
+    color: #b1191a;
+}
+
+.count {
+    position: absolute;
+    top: -5px;
+    left: 100px;
+    padding: 0px 3px;
+    background-color: red;
+    height: 14px;
+    line-height: 14px;
+    color: white;
+    border-radius: 7px 7px 7px 0px;
 }
