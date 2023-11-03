@@ -1,15 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="hello.js"></script>
+    <title>购物车</title>
+    <script src="vue.js"></script>
+
 </head>
+
 <body>
-    hello world sss
+
+    <div id="hello-vue">
+        <h2 :title="title">
+            {{ title }}
+        </h2>
+        <p><input type="text" v-model="course" v-on:keydown.enter="addCourse"></p>
+       
+        <div v-for="c in courses" :key="c">
+            {{ c }}
+        </div>
+       
+
+    </div>
+
+
+    ​
     <script>
-       hello();
+        const HelloVueApp = {
+            data() {
+                return {
+                    title: '购物车',
+                    course: '',
+                    courses: ['web全职', 'web高级']
+                }
+            },
+            methods: {
+                
+                  addCourse(){
+                        if(this.course != ''){
+                           this.courses.push(this.course);
+                        this.course = '';
+                        }else {
+                            alert('请输入内容');
+                        }
+                        
+                    }
+               
+            }
+
+        };
+
+        Vue.createApp(HelloVueApp).mount('#hello-vue');
     </script>
 </body>
+
 </html>
+<!-- <!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Vue 测试实例 - 菜鸟教程(runoob.com)</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div id="hello-vue" class="demo">
+        {{ message }}
+        {{ hello }}
+    </div>
+
+    <script>
+        const HelloVueApp = {
+            data() {
+                return {
+                    message: 'Hello Vue!!',
+                    hello: 'hellos'                }
+            }
+        }
+
+        Vue.createApp(HelloVueApp).mount('#hello-vue')
+    </script>
+</body>
+
+</html> -->
