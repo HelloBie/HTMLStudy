@@ -4,83 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>购物车</title>
-  
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <style>
-        .active { 
-            background-color: red;
-        }
-    </style>
+    <title>Document</title>
 </head>
 
 <body>
-
-    <div id="hello-vue">
-        <h2 :title="title">
-            {{ title }}
-        </h2>
-        <p><input type="text" v-model="course" v-on:keydown.enter="addCourse"></p>
-       
-        <div :class="{active:courses.length == 5}" v-for="c in courses" :key="c">
-            {{ c }}
-        </div>
-       
-
+    <div id="root">
+        <h1>{{name}}</h1>
     </div>
 
-        
-    ​
-    <script>
-       const app = new Vue({
-        el:'#hello-vue',
-        data() {
+    <script type="text/javascript">
+        Vue.config.productionTip = false;
+        const x = new Vue({
+            el: '#root',
+          data() {
             return {
-                title: 'Hello',
-                course:'',
-                courses: [
-                    '1',
-                    '2',
-                ]
+                name: "sadasd"
             }
-        },
-        methods: {
-            addCourse (){
-                this.courses.push(this.course);
-                this.course = '';
-            }
-        }
-       });
+          },
+
+        });
     </script>
 </body>
 
 </html>
-<!-- <!DOCTYPE html> 
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <title>Vue 测试实例 - 菜鸟教程(runoob.com)</title>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-</head>
-
-<body>
-    <div id="hello-vue" class="demo">
-        {{ message }}
-        {{ hello }}
-    </div>
-
-    <script>
-        const HelloVueApp = {
-            data() {
-                return {
-                    message: 'Hello Vue!!',
-                    hello: 'hellos'                }
-            }
-        }
-
-        Vue.createApp(HelloVueApp).mount('#hello-vue')
-    </script>
-</body>
-
-</html> -->
