@@ -10,7 +10,8 @@
 
 <body>
     <div id="root">
-        <h1>{{name}}</h1>
+        <h1>{{url}}</h1>
+        <a :href="url">点我去github</a>
     </div>
 
     <script type="text/javascript">
@@ -19,7 +20,8 @@
             el: '#root',
           data() {
             return {
-                name: "sadasd"
+                name: "sadasd",
+                url: "https://github.com"
             }
           },
 
