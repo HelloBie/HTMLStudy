@@ -1,7 +1,7 @@
 <template>
   <div class="bgd">
-    <h2>name:{{name}}</h2>
-    <h2>address:{{ address }}</h2>
+    <h2>name:{{nam}}</h2>
+    <h2>address:{{ add }}</h2>
   </div>
 </template>
 
@@ -14,6 +14,10 @@ export default {
             address: '长春'
         }
     },
+    props:[
+      'add',
+      'nam'
+    ]
 }
 </script>
 

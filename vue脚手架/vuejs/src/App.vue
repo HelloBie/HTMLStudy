@@ -1,17 +1,21 @@
 <template>
 
 <div>
-       <schoolView/>
-    <schoolView/>
-    </div>
+  <toDoList/>
+</div>
   
 </template>
 
 <script>
-import schoolView from './common/schoolView'
+import toDoList from './common/ToDoList/ToDoList.vue'
 export default {
     name:'App',
-components:{schoolView}
+components:{toDoList},
+data() {
+    return {
+        todo: []
+    }
+},
 }
 </script>
 
