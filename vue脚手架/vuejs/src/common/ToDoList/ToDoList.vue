@@ -10,6 +10,8 @@
 import addInput from './subCom/addInput.vue'
 import todoList from './subCom/todoList'
 import bottomBar from './subCom/bottomBar.vue'
+
+
 export default {
   components:{
     addInput,
@@ -19,13 +21,7 @@ export default {
   methods: {
     add(value) {
       console.log(value);
-      let ime = Date.now;
-      this.todo.push({
-
-        id:ime,
-        title:value ? value : "temp",
-        select:false
-      });
+    
     },
   },
   data() {
