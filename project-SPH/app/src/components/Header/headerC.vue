@@ -57,9 +57,9 @@
 						params: {
 							keyword: this.keyword
 						},
-						query: {
-							k: this.keyword.toUpperCase()
-						},
+						// query: {
+						// 	k: this.keyword.toUpperCase()
+						// },
 					},
 					() => {},
 					() => {}

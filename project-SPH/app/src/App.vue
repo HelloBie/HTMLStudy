@@ -9,8 +9,8 @@
 <script>
 import Header from './components/Header/headerC.vue'
 import Footer from './components/Footer/FooterC.vue'
-
 import router from '@/router'
+
 
 export default {
   name: 'App',
@@ -18,6 +18,9 @@ export default {
   components: {
     Header,
 	Footer,
+  },
+  mounted() {
+  	let res = this.$store.dispatch('categoryList');
   }
 }
 </script>

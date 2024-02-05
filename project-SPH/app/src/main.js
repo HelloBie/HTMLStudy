@@ -1,9 +1,14 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from '@/router'
-Vue.config.productionTip = false
+import TypeNav from '@/pages/Home/TypeNav'
+import store from '@/store'
 
+
+Vue.config.productionTip = false
+Vue.component(TypeNav.name,TypeNav)
 new Vue({
   render: h => h(App),
-  router
+  router,
+  store
 }).$mount('#app')
